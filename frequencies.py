@@ -6,9 +6,9 @@ def frequencies(items):
 
     for item in items:
         if item in frequencies.keys():
-            frequencies[item] += 1
+            frequencies[str(item)] += 1
         else:
-            frequencies[item] = 1
+            frequencies[str(item)] = 1
     
 
     return frequencies
