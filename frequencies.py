@@ -3,7 +3,12 @@
 
 def frequencies(items):
     frequencies = {}
-    print("hello")
+
+    for item in items:
+        if item in frequencies.keys():
+            frequencies[item] += 1
+        else:
+            frequencies[item] = 1
     
-    # Your code goes here
+
     return frequencies
